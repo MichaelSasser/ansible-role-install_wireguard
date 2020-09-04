@@ -1,0 +1,21 @@
+---
+# tasks file for ansible-role-install-wireguard
+
+- name: Ensure dev environment is installed
+  apt:
+    pkg:
+      - libmnl-dev 
+      - libelf-dev 
+      - "linux-headers-{{ ansible_kernel }}"
+      - build-essential 
+      - pkg-config
+      - wireguard
+      - wireguard-dkms
+    state: present
+
+# If current problemes persist:
+# - name: Ensure wireguard is loaded at boot
+#   lineinfile:
+#     path: /etc/modules
+#     line: wireguard
+

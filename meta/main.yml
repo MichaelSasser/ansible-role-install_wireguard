@@ -1,0 +1,21 @@
+---
+
+dependencies: []
+
+galaxy_info:
+  author: Michael Sasser
+  description: Install wireguard, no configuration.
+  company: MichaelSasser.org
+  issue_tracker_url: https://github.com/MichaelSasser/ansible-role-install-wireguard/issues
+  license: GPL-3.0-only
+  min_ansible_version: 2.9
+  github_branch: https://github.com/MichaelSasser/ansible-role-install-wireguard
+  platforms:
+    - name: Debian
+      versions:
+        - all
+
+  galaxy_tags:
+    - wireguard
+    - kmod
+
