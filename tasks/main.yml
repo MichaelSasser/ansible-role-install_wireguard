@@ -4,10 +4,10 @@
 - name: Ensure dev environment is installed
   apt:
     pkg:
-      - libmnl-dev 
-      - libelf-dev 
+      - libmnl-dev
+      - libelf-dev
       - "linux-headers-{{ ansible_kernel }}"
-      - build-essential 
+      - build-essential
       - pkg-config
       - wireguard
       - wireguard-dkms
@@ -18,4 +18,3 @@
 #   lineinfile:
 #     path: /etc/modules
 #     line: wireguard
-
